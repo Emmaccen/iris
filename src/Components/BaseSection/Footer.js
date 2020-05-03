@@ -75,7 +75,7 @@ class Footer extends Component {
         </footer>
         <center>
           <p style={{color : textColor}} className='descriptionText copyright'>Copyright &copy; {new Date().getFullYear()} All Rights Reserved |
-            This Template Is Made With Love By <a href='https://emmaccen.github.io/Emmaccen/'>Emmanuel</a></p>
+            This Template Is Made With Love By <a href='https://emmaccen.github.io/emmaccen/'>Emmanuel</a></p>
           </center>
       </div>
     )

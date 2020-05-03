@@ -14,7 +14,9 @@ code {
 
 
 /* my code begins below */
-
+:root {
+  --iconColor : #fab95b;
+}
 *{
   box-sizing: border-box;
 }
@@ -47,7 +49,7 @@ a {
 }
 /* icons */
 .icon {
-  color : #fab95b;
+  color : var(--iconColor);
   margin-right: 10px;
   font-size: 20px;
 }
@@ -58,7 +60,16 @@ a {
 }
 .highlight {
   transition: .5s all ease;
-  color : #fab95b;
+  color : var(--iconColor);
+}
+
+::selection {
+  background: var(--iconColor); /* WebKit/Blink Browsers */
+  color : #333;
+}
+::-moz-selection {
+  background: var(--iconColor); /* Gecko Browsers */
+  color : #333;
 }
 
 /*===========slide in cool animation===============*/
@@ -85,7 +96,7 @@ a {
 
 /* Navigation styles */
 .active {
-  color : #fab95b !important;
+  color : var(--iconColor) !important;
 }
 .navLinks {
   padding: 10px;
@@ -141,10 +152,10 @@ a {
    align-self: center;
  }
  #navIcon {
-   color : #fab95b;
+   color : var(--iconColor);
  }
 .navLinks a:hover {
-  color : #fab95b;
+  color : var(--iconColor);
 }
 
 /* nav style for scroll effect */
@@ -198,7 +209,7 @@ a {
   cursor: pointer;
 }
 .sideMenu nav a:hover {
-  color : #fab95b;
+  color : var(--iconColor);
 }
 
 #closeNav {
@@ -258,7 +269,7 @@ a {
   outline: none;
   margin-top: 20px;
   border-radius: 30px;
-  background-color: #fab95b;
+  background-color: var(--iconColor);
   border: none;
   font-size: 16px;
   padding: 15px 30px;
@@ -351,7 +362,7 @@ a {
 	box-shadow: 0 2px 3px rgba(0,0,0,0.2) inset;
 	border-radius: 5px;
 	min-width: 95%;
-  color : #fab95b;
+  color : var(--iconColor);
 }
 
 /*now lets style the progress anyhow we want(having disabled the default looks*/
@@ -365,12 +376,12 @@ a {
 }
 .mySkills progress::-webkit-progress-value {
   /*color for the values.... orange like color*/
-	background-color: #fab95b;
+	background-color: var(--iconColor);
 	border-radius: 5px;
 }
 .mySkills progress::-moz-prgress-bar {
 	/*For Mozilla Firefox*/
-	background-color: #fab95b;
+	background-color: var(--iconColor);
 	border-radius: 5px;
 }
 /* author image  */
@@ -389,7 +400,7 @@ a {
 
 /* my Services section */
 /* .servicesHeader h2::first-letter {
-  border-bottom: 1px solid #fab95b;
+  border-bottom: 1px solid var(--iconColor);
 } */
 .servicesContainer {
   margin-bottom: 150px;
@@ -399,14 +410,14 @@ a {
   color : #333;
   padding: 10px;
   margin : 20px;
-  /* border : 2px solid #fab95b; */
+  /* border : 2px solid var(--iconColor); */
 }
 .servicesContainer .cardContainer .descriptionText2 {
   color : rgb(170,170,170);
 }
 .servicesContainer .cardContainer span {
   margin : 0px 10px 0px 0px;
-  color : #fab95b;
+  color : var(--iconColor);
   font-size: 150%;
 }
 .servicesContainer{
@@ -415,7 +426,7 @@ a {
 }
 .servicesContainer .cardContainer:hover {
   /* transition: .3s all ease; */
-  border : 2px solid #fab95b;
+  border : 2px solid var(--iconColor);
   padding : 8px;
 }
 @keyframes fadeEffect {
@@ -526,7 +537,7 @@ iframe {
   height: 300px;
 }
 .blogs .readMore {
-  color : #fab95b;
+  color : var(--iconColor);
 }
 .blogs:hover {
   /* box-shadow: 2px 2px 1px 1px rgb(0,0,0,0.2); */
@@ -534,7 +545,7 @@ iframe {
 }
 .blogs h2:hover > a {
   transition: .5s all ease;
-  color : #fab95b !important;
+  color : var(--iconColor) !important;
 }
 
 
@@ -555,7 +566,7 @@ iframe {
   margin : 10px;
 }
 input:focus, textarea:focus {
-  border : 1px solid #fab95b !important;
+  border : 1px solid var(--iconColor) !important;
   margin : 9px;
 }
 .block {
@@ -661,14 +672,14 @@ footer {
 
 footer a:hover {
   transition: .5s all ease;
-  color : #fab95b !important;
+  color : var(--iconColor) !important;
   cursor: pointer;
 }
 .copyright {
   margin-bottom: 50px;
 }
 .copyright a {
-  color : #fab95b;
+  color : var(--iconColor);
 }
 .socialLinks a{
   margin-right: 20px;
