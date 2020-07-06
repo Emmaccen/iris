@@ -1,8 +1,5 @@
 /*Cool slide in animation code*/
-/* eslint-disable */
-/*Cool slide in animation code*/
-import $ from 'jquery'
-// decided not to use jquery again
+// import $ from 'jquery'
 
 
 
